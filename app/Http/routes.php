@@ -31,4 +31,5 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/home', 'HomeController@index');
     Route::get('/todo', 'ToDoController@index');
+    Route::get('/todo/{todos}', 'ToDoController@show');
 });
