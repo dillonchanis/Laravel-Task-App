@@ -12,7 +12,7 @@ class ToDoController extends Controller
     {
       $todos = Todo::all();
 
-      return view('todo.index');
+      return view('todo.index', compact('todos'));
     }
 
     public function show(Todo $todos)
