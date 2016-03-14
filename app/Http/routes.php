@@ -32,6 +32,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/home', 'HomeController@index');
     Route::get('/todo', 'ToDoController@index');
     Route::get('/todo/{todos}', 'ToDoController@show');
+    Route::get('/notes/{note}/edit', 'NotesController@edit');
+
+    Route::patch('notes/{note}', 'NotesController@update');
 
     Route::post('/todo/{todos}/notes', 'NotesController@store');
 });
