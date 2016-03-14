@@ -3,13 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Todo;
 use App\Http\Requests;
 
 class ToDoController extends Controller
 {
     public function index()
     {
+      $todos = Todo::all();
+
       return view('todo.index');
+    }
+
+    public function show($id)
+    {
+      $todo = Todo::find($id);
+
+      return view('todo.show', compact('todo'));
     }
 }
