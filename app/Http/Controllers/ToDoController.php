@@ -17,6 +17,6 @@ class ToDoController extends Controller
 
     public function show(Todo $todos)
     {
-      return view('todo.show', compact('todo'));
+      return view('todo.show', compact('todos'));
     }
 }
