@@ -10,5 +10,10 @@
     @endforeach
   </ul>
   <a href="/todo/">Back To Index</a>
+
+  <form method="POST" action="/todo/{{ todos->id }}/notes">
+    <textarea></textarea>
+    <button type="submit" class="btn btn-primary">Add a ToDo</button>
+  </form>
 </div>
 @stop
