@@ -9,17 +9,18 @@
       <li>{{ $note->body  }}</li>
     @endforeach
   </ul>
-  <a href="/todo/">Back To Index</a>
 
   <form method="POST" action="/todo/{{ $todos->id }}/notes">
     {{ csrf_field() }}
 
     <div class="form-group">
-      <textarea class="form-control"></textarea>
+      <textarea name="body" class="form-control"></textarea>
     </div>
     <div class="form-group">
       <button type="submit" class="btn btn-primary">Add a ToDo</button>
     </div>
   </form>
+
+  <a href="/todo/">Back To Index</a>
 </div>
 @stop
