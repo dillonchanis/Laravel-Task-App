@@ -9,12 +9,12 @@
       <h3>Current Tasks</h3>
       <ul class="list-group">
         @foreach ($todos->notes as $note)
-        <div class="col-md-10">
-          <li class="list-group-item">{{ $note->body  }}</li>
+        <div class="col-md-12 list-group-item">
+          <li style="list-style:none;">{{ $note->body  }}<a href="/notes/{{ $note->id }}/edit"class="btn btn-warning pull-right">Edit</a></li>
         </div>
 
         <div class="col-md-2">
-          <a href="/notes/{{ $note->id }}/edit"class="btn btn-warning pull-right">Edit</a>
+
         </div>
         @endforeach
       </ul>
