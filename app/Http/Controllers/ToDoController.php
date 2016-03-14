@@ -19,4 +19,13 @@ class ToDoController extends Controller
     {
       return view('todo.show', compact('todos'));
     }
+
+    public function store(Request $request, ToDo $todos)
+    {
+      $todo = new ToDo;
+      $todo->title = $request->title;
+
+      $todo->save();
+      return back();
+    }
 }
