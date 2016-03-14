@@ -6,7 +6,7 @@
   <h1>All To Do Lists</h1>
   <hr>
     @foreach ($todos as $todo)
-      {{ $todo->title }}
+      <a href="/todo/{{ $todo->id }}">{{ $todo->title }}</a>
     @endforeach
 </div>
 
