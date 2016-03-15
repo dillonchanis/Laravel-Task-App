@@ -36,6 +36,8 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::patch('notes/{note}', 'NotesController@update');
 
+    Route::get('todo/{todo}/delete', 'ToDoController@delete');
+
     Route::post('/todo/new', 'ToDoController@store');
     Route::post('/todo/{todos}/notes', 'NotesController@store');
 });
