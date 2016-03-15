@@ -12,4 +12,5 @@ class Note extends Model
   {
     return $this->belongsTo(Todo::class);
   }
+
 }
