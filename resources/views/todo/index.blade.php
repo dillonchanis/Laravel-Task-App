@@ -7,9 +7,12 @@
     <div class="col-md-12">
       <h1>All To Do Lists</h1>
       <hr>
-        <ul class="list-item-group">
+        <ul class="list-group">
           @foreach ($todos as $todo)
-            <li><a href="/todo/{{ $todo->id }}">{{ $todo->title }}</a></li>
+            <li class="list-group-item">
+              <a href="/todo/{{ $todo->id }}">{{ $todo->title }}</a>
+              <a href="/todo/{{ $todo->id }}/delete" data-method="delete" class="btn btn-danger pull-right">Delete</a>
+            </li>
           @endforeach
         </ul>
     </div>
