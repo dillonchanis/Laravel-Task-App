@@ -30,6 +30,9 @@ Route::group(['middleware' => 'web'], function () {
     Route::auth();
 
     Route::get('/home', 'HomeController@index');
+    Route::get('/profile/{name}', 'HomeController@showProfile');
+
+
     Route::get('/todo', 'ToDoController@index');
     Route::get('/todo/{todos}', 'ToDoController@show');
     Route::get('/notes/{note}/edit', 'NotesController@edit');
