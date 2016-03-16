@@ -32,6 +32,13 @@
           <button type="submit" class="btn btn-primary">Add ToDo</button>
         </div>
       </form>
+
+      @if (count($errors))
+        @foreach($errors->all() as $error)
+          <div class="col-md-12 alert alert-danger" role="alert">{{ $error }}</div>
+        @endforeach
+      @endif
+
   </div>
   </div>
 </div>
