@@ -23,6 +23,10 @@ class ToDoController extends Controller
 
     public function store(Request $request)
     {
+      $this->validate($request, [
+        'title' => 'required',
+      ]);
+
       $request->user()->todos()->create([
         'title' => $request->title,
       ]);

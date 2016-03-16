@@ -11,6 +11,11 @@ class NotesController extends Controller
 {
     public function store(Request $request, Todo $todos)
     {
+
+      $this->validate($request, [
+        'body' => 'required'
+      ]);
+      
       $note = new Note;
       $note->body = $request->body;
 
