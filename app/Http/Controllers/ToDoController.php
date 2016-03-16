@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Todo;
+use App\User;
 use App\Http\Requests;
 
 class ToDoController extends Controller
@@ -22,10 +23,10 @@ class ToDoController extends Controller
 
     public function store(Request $request)
     {
-      $todo = new ToDo;
-      $todo->title = $request->title;
+      $request->user()->todos()->create([
+        'title' => $request->title,
+      ]);
 
-      $todo->save();
       return back();
     }
 
