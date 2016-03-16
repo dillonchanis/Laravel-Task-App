@@ -30,4 +30,10 @@ class NotesController extends Controller
 
       return back();
     }
+
+    public function delete(Note $note)
+    {
+      Note::destroy($note->id);
+      return back();
+    }
 }
