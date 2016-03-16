@@ -10,7 +10,10 @@
       <ul class="list-group">
         @foreach ($todos->notes as $note)
         <div class="col-md-12 list-group-item">
-          <li style="list-style:none;">{{ $note->body  }}<a href="/notes/{{ $note->id }}/edit"class="btn btn-warning pull-right">Edit</a></li>
+          <li style="list-style:none;">{{ $note->body  }}
+            <a href="/notes/{{ $note->id }}/edit" class="btn btn-warning pull-right">Edit</a>
+            <a href="/notes/{{ $note->id }}/delete" class="btn btn-danger pull-right">Delete</a>
+          </li>
         </div>
 
         <div class="col-md-2">
