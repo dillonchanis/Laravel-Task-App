@@ -1,0 +1,12 @@
+html, body {
+  width, height: 100%;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+p, li {
+  font-family: 'Lora', serif;
+  font-size: 16px;
+}
