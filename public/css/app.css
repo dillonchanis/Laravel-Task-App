@@ -1,12 +1,110 @@
 html, body {
   width, height: 100%;
+  margin: 0;
 }
 
-h1, h2, h3 {
-  font-family: 'Open Sans', sans-serif;
+h1 {
+  font-family: 'Megrim';
+  font-size: 64px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+h2, h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 p, li {
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', serif;
   font-size: 16px;
+}
+
+a, a:visited {
+  color: #fff;
+  font-family: serif;
+  font-size: 22px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: transparent;
+  margin-bottom: 0;
+}
+
+div.mast {
+  background-image: url('../img/bg.jpeg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.mast h1 {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mast a {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a.call-to-action {
+  font-family: 'Raleway', sans-serif;
+  width: 220px;
+  text-align: center;
+  border: 1px solid #fff;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+.sub-header p {
+  font-size: 22px;
+  margin-bottom: 48px;
+}
+
+.pre-footer {
+  background-image: url('../img/footerbg.jpeg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.pre-footer h2 {
+  color: #fff;
+}
+
+.app-uses {
+  margin-bottom: 48px;
+}
+
+.app-uses .desc {
+  text-align: justify;
+  color: #000;
+  font-size: 22px;
+}
+
+footer {
+  height: 250px;
 }
