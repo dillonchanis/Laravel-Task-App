@@ -32,6 +32,11 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/home', 'HomeController@index');
     Route::get('/profile/{name}', 'HomeController@showProfile');
 
+    Route::get('/create/profile', 'ProfileController@start');
+    Route::get('/create/todo', 'ToDoController@start');
+
+    Route::get('/profile/{profile}/edit', 'ProfileController@edit');
+    Route::patch('/profile/{profile}', 'ProfileController@update');
 
     Route::get('/todo', 'ToDoController@index');
     Route::get('/todo/{todos}', 'ToDoController@show');
@@ -44,4 +49,5 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::post('/todo/new', 'ToDoController@store');
     Route::post('/todo/{todos}/notes', 'NotesController@store');
+    Route::post('/profile/new', 'ProfileController@store');
 });
