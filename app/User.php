@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-
+use App\Profile;
 use App\Todo;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -28,6 +28,11 @@ class User extends Authenticatable
     public function todos()
     {
       return $this->hasMany(Todo::class);
+    }
+
+    public function profile()
+    {
+      return $this->hasMany(Profile::class);
     }
 
 }
