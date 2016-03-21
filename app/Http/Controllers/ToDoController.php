@@ -9,6 +9,11 @@ use App\Http\Requests;
 
 class ToDoController extends Controller
 {
+    public function start()
+    {
+      return view('profile.todo');
+    }
+
     public function index()
     {
       $todos = Todo::all();
