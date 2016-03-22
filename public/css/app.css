@@ -23,7 +23,6 @@ p, li {
 }
 
 a, a:visited {
-  color: #fff;
   font-size: 22px;
 }
 
@@ -72,6 +71,7 @@ a.call-to-action {
   border: 1px solid #fff;
   line-height: 60px;
   text-transform: uppercase;
+  color: #fff;
 }
 
 .sub-header p {
@@ -115,6 +115,7 @@ a.call-to-action {
   line-height: 60px;
   text-transform: uppercase;
   margin: 16px;
+  color: #fff;
 }
 
 .btn-custom:hover {
