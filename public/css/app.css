@@ -24,7 +24,6 @@ p, li {
 
 a, a:visited {
   color: #fff;
-  font-family: serif;
   font-size: 22px;
 }
 
@@ -81,18 +80,19 @@ a.call-to-action {
 }
 
 .pre-footer {
-  background-image: url('../img/footerbg.jpeg');
+  background-image: url('../img/footerbg.jpg');
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 350px;
+  height: 375px;
   width: 100%;
   margin-bottom: 0;
 }
 
 .pre-footer h2 {
   color: #fff;
+  margin-top: 48px;
 }
 
 .app-uses {
@@ -103,8 +103,36 @@ a.call-to-action {
   text-align: justify;
   color: #000;
   font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.btn-custom {
+  font-family: 'Raleway', sans-serif;
+  font-size:22px;
+  width: 220px;
+  text-align: center;
+  border: 1px solid #fff;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin: 16px;
+}
+
+.btn-custom:hover {
+  opacity: .5;
+  color: #ccc;
+  border: 1px solid #ccc;
 }
 
 footer {
-  height: 250px;
+  text-align: center;
+  height: 100px;
+  margin-top: 125px;
+}
+
+footer a i{
+  color: #111;
+}
+
+footer a i:hover {
+  color: #ccc;
 }
