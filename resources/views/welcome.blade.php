@@ -51,7 +51,7 @@
      <a href="https://www.linkedin.com/in/dillon-chanis-b20b87111" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
    </div>
    <div class="col-md-12">
-     <p><small>Dillon Chanis</small></p>
+     <a href="http://dillonchanis.com/" target="_blank"><small>Dillon Chanis</small></a>
    </div>
   </div>
 </footer>
