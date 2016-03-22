@@ -29,17 +29,16 @@
       <p class="desc">Fusce eget risus id dolor tincidunt dapibus consequat et quam. Aliquam a purus aliquam, ornare massa sit amet, blandit elit.</p>
     </div>
   </div>
+  
   <div class="row">
     <div class="pre-footer">
       <div class="col-md-6 col-md-offset-3">
         <h2 class="text-center">Sign Up Today!</h2>
         <hr>
       </div>
-      <div class="col-md-6">
-        <!--Login-->
-      </div>
-      <div class="col-md-6">
-        <!--SignUp-->
+      <div class="col-md-12 text-center">
+        <a href="/login" class="btn btn-custom">Login</a>
+        <a href="/register" class="btn btn-custom">Register</a>
       </div>
     </div>
   </div>
@@ -48,9 +47,11 @@
 <footer class="container-fluid">
   <div class="row">
    <div class="col-md-6 col-md-offset-3">
-     <a href="github.com/dillonchanis"><i class="fa fa-github"></i></a>
-     <a href=""></a>
-     <a href=""></a>
+     <a href="github.com/dillonchanis" target="_blank"><i class="fa fa-github fa-3x"></i></a>
+     <a href="https://www.linkedin.com/in/dillon-chanis-b20b87111" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+   </div>
+   <div class="col-md-12">
+     <p><small>Dillon Chanis</small></p>
    </div>
   </div>
 </footer>
