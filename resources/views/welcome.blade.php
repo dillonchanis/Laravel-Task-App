@@ -29,7 +29,7 @@
       <p class="desc">Fusce eget risus id dolor tincidunt dapibus consequat et quam. Aliquam a purus aliquam, ornare massa sit amet, blandit elit.</p>
     </div>
   </div>
-  
+
   <div class="row">
     <div class="pre-footer">
       <div class="col-md-6 col-md-offset-3">
@@ -38,7 +38,7 @@
       </div>
       <div class="col-md-12 text-center">
         <a href="/login" class="btn btn-custom">Login</a>
-        <a href="/register" class="btn btn-custom">Register</a>
+        <a href="/register" class="btn btn-custom">Sign Up</a>
       </div>
     </div>
   </div>
