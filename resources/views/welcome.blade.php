@@ -5,7 +5,11 @@
   <div class="row">
     <div class="mast">
       <h1>Laravel task app</h1>
+      @if (Auth::guest())
         <a href="/register" class="call-to-action">Sign Up</a>
+      @else
+        <a href="/home" class="call-to-action">Dashboard</a>
+      @endif
     </div>
   </div>
   <div class="row">
