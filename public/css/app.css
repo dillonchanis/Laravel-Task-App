@@ -229,6 +229,12 @@ a:hover {
   margin: .6em 0;
 }
 
+/* Login & Registration */
+
+.panel-login {
+  margin: 5.25em 0;
+}
+
 footer.container-fluid {
   background-color: #727272;
   height: 200px;
