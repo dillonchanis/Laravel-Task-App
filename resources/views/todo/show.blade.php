@@ -1,28 +1,34 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-  <h2>{{ $todos->title }}</h2>
-  <hr>
-  <div class="row">
-    <div class="col-md-6 col-md-offset-3">
-      <h3>Current Tasks</h3>
-      <ul class="list-group">
-        @foreach ($todos->notes as $note)
-        <div class="col-md-12 list-group-item">
-          <li style="list-style:none;">{{ $note->body  }}
-            <a href="/notes/{{ $note->id }}/edit" class="btn btn-warning pull-right">Edit</a>
-            <a href="/notes/{{ $note->id }}/delete" class="btn btn-danger pull-right">Delete</a>
-          </li>
-        </div>
 
-        <div class="col-md-2">
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel panel-todo">
+          <div class="panel-body">
+            <div class="col-md-6 col-md-offset-3">
+            <h2>{{ $todos->title }} : Notes</h2>
+              <ul class="list-group">
+                @foreach ($todos->notes as $note)
+                <li class="list-group-item">
+                  <p>
+                  {{ $note->body  }}
+                  <span class="pull-right">
+                    <a href="/notes/{{ $note->id }}/edit" class="btn"><i class="material-icons">mode_edit</i></a>
+                    <a href="/notes/{{ $note->id }}/delete" class="btn"><i class="material-icons">delete</i></a>
+                  <span>
+                  </p>
+                </li>
+                @endforeach
+              </ul>
+            </div>
+          </div>
         </div>
-        @endforeach
-      </ul>
+      </div>
     </div>
-  </div>
+
 
   <hr>
 
