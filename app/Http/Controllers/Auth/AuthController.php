@@ -23,8 +23,8 @@ class AuthController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/create/profile';
-    
+    protected $redirectTo = '/home';
+
     /**
      * Create a new authentication controller instance.
      *
@@ -56,6 +56,8 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
+        $this->redirectTo = '/create/profile';
+
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
